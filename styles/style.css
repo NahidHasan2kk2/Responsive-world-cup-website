@@ -10,6 +10,7 @@ main {
     align-items: center;
     margin-left: 140px;
     margin-right: 140px;
+    background-color: #FFFFFF;
     /* display: flex;
     align-items: center;
     flex-direction: column; */
@@ -88,6 +89,7 @@ main {
     margin-left: 10px;
     display: flex;
     margin-top: 130px;
+    margin-right: 160px;
 }
 
 .info-blogs {
@@ -193,6 +195,8 @@ main {
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
 }
 
 /* footer style */
@@ -202,6 +206,7 @@ footer {
     height: 440px;
     display: flex;
     align-items: center;
+    margin-top: 100px;
 
 }
 
@@ -230,4 +235,19 @@ hr {
     color:
         #B9B9B9;
 
+}
+
+/* mobile responsive style  */
+@media only screen and (max-width:688px) {
+    .section-title {
+        width: 100%;
+    }
+
+    .text-title {
+        font-size: 10px;
+    }
+
+    .text-container {
+        display: grid;
+    }
 }
